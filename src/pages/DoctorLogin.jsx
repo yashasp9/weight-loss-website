@@ -1,11 +1,11 @@
-import { useLoginStore } from "../store/store";
-import { useNavigate } from "react-router";
+import { useLoginStore } from '../store/store';
+import { useNavigate } from 'react-router';
 
 const cardContainerStyle = {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  height: "100vh"
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  height: '100vh',
 };
 
 const DoctorLogin = () => {
@@ -17,16 +17,16 @@ const DoctorLogin = () => {
 };
 
 const loginCardStyle = {
-  position: "relative", // To position the title
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
+  position: 'relative', // To position the title
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
 
-  height: "350px",
-  width: "400px",
+  height: '350px',
+  width: '400px',
 
-  border: "1px solid grey",
-  borderRadius: "5px"
+  border: '1px solid grey',
+  borderRadius: '5px',
 };
 
 const LoginCard = () => {
@@ -39,21 +39,21 @@ const LoginCard = () => {
 
 const loginCardContentStyle = {
   title: {
-    position: "absolute",
-    top: "20px",
-    left: "30px"
+    position: 'absolute',
+    top: '20px',
+    left: '30px',
   },
   loginFormStyle: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "10px",
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '10px',
 
     inputStyles: {
-      border: "1px solid grey",
-      padding: "4px",
-      borderRadius: "8px"
-    }
-  }
+      border: '1px solid grey',
+      padding: '4px',
+      borderRadius: '8px',
+    },
+  },
 };
 
 const LoginCardContent = () => {
@@ -62,13 +62,22 @@ const LoginCardContent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (email === "test@test.com" && password === "pass123") {
-      setErrorText("");
-      navigate("/dashboard");
+    if (email === 'test@test.com' && password === 'pass123') {
+      setErrorText('');
+      navigate('/dashboard');
     } else {
-      setErrorText("Please Enter a Valid Username and Password");
+      setErrorText('Please Enter a Valid Username and Password');
     }
   };
+
+  const email = useLoginStore((state) => state.email);
+  const setEmail = useLoginStore((state) => state.setEmail);
+
+  const password = useLoginStore((state) => state.password);
+  const setPassword = useLoginStore((state) => state.setPassword);
+
+  const errorText = useLoginStore((state) => state.errorText);
+  const setErrorText = useLoginStore((state) => state.setErrorText);
 
   return (
     <div className="cardContentContainer" style={loginCardContentStyle}>
@@ -104,13 +113,13 @@ const LoginCardContent = () => {
 };
 
 const loginButtonStyle = {
-  color: "white",
-  background: "black",
-  padding: "15px 15px",
-  borderRadius: "30px",
-  display: "flex",
-  justifyContent: "center",
-  cursor: "pointer"
+  color: 'white',
+  background: 'black',
+  padding: '15px 15px',
+  borderRadius: '30px',
+  display: 'flex',
+  justifyContent: 'center',
+  cursor: 'pointer',
 };
 
 const LoginButton = () => (
