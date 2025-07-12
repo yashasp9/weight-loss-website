@@ -47,6 +47,7 @@ const loginCardContentStyle = {
     display: 'flex',
     flexDirection: 'column',
     gap: '10px',
+    width: '250px',
 
     inputStyles: {
       border: '1px solid grey',

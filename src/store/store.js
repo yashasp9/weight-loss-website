@@ -9,12 +9,16 @@ export const useLoginStore = create((set) => ({
   setErrorText: (errorText) => set({ errorText }),
 }));
 
-export const useSignupStore = create((set) => ({
+export const useSignUpStore = create((set) => ({
   name: '',
   phone: '',
   email: '',
   password: '',
   appointmentDateTime: '',
+  errorText: '',
+  signUpSubmitted: false,
+  setSignUpSubmitted: (value) => set({ signUpSubmitted: value }),
+  setErrorText: (errorText) => set({ errorText }),
   setName: (name) => set({ name }),
   setPhone: (phone) => set({ phone }),
   setEmail: (email) => set({ email }),
