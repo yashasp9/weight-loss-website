@@ -3,7 +3,8 @@ import React from 'react';
 const style = {
   display: 'flex',
   background: '#FFFFFF',
-  width: 'fit-content',
+  // width: 'fit-content',
+  maxWidth: '360px',
   'border-radius': '5px',
   padding: '10px 10px',
 };

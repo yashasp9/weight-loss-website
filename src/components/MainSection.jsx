@@ -40,6 +40,7 @@ const subHeadingStyle = {
   'text-align': 'center',
   width: '80%',
   'margin-bottom': '20px',
+  lineHeight: '2',
 };
 
 const MainSection = () => {
@@ -47,19 +48,20 @@ const MainSection = () => {
     <div style={mainSectionContainerStyles} className="main-section-container">
       <div style={mainSectionTextStyles} className="main-section-text">
         <p style={mainSectionTextStyles.mainHeading}>
-          Expert-Led <span style={weightLossStyle}>Weight Loss,</span>{' '}
-          Customized for Your Needs
+          Yoga Specialists Supporting Your Unique{' '}
+          <span style={weightLossStyle}>Weight Loss</span> Goals
         </p>
         <p style={subHeadingStyle}>
-          Reach your weight loss goals safely and sustainably, supported by
-          expert clinicians,{' '}
+          Safely and sustainably transform your body with{' '}
           <strong>
-            <u>individualized treatment</u>
-          </strong>
-          , and trusted medical protocols.
+            <u>personalised</u>
+          </strong>{' '}
+          yoga support and trusted, expert-led routines.
         </p>
         <p style={bookMedicalConsultationStyle}>
-          <Link to="/patient-sign-up">Book A Free Medical Consultation →</Link>
+          <Link id="home" to="/appointment-booking">
+            Book a Consultation →
+          </Link>
         </p>
       </div>
     </div>

@@ -37,26 +37,26 @@ function App() {
       <MainSection />
       <ProductResultList />
       <ProductComparisonCard
-        heading="Traditional Diet"
-        subheading="Weight loss traditional method"
+        heading="Traditional Diets"
+        subheading="Why They Fall Short"
         features={[
-          'Only follow portion control',
+          'Can lead to unhealthy fixation on food and rules',
           'Obsession with food and restriction',
           'One size fits all approach',
           'Loss of Muscle Mass',
         ]}
-        imageSrc={'./public/natural-diet.jpg'}
+        imageSrc={'./natural-diet.jpg'}
       />
       <ProductComparisonCard
-        heading="Medical Consultations"
-        subheading="Weight loss modern method"
+        heading="Yoga-Guided Transformation"
+        subheading=" The Modern Approach"
         features={[
-          'App Based Tracking',
-          'Doctor led nutrition plans',
-          'Monthly Physician check ins',
-          'Prescription medications needed',
+          'Personalized guidance from experienced yoga instructors',
+          'Mindful movement and stress reduction for healthy, sustainable results',
+          'Holistic programs that evolve with your needs',
+          'Gentle accountability and supportive community',
         ]}
-        imageSrc="./public/doctor-consultation.png"
+        imageSrc="./yoga.png"
       />
       <BeforeAfterSection />
       <CaptionNote />

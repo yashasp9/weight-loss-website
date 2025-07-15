@@ -1,7 +1,7 @@
 const ResultTexts = [
-  'Weight challenges are often driven by hormonal, metabolic, or psychological factors—not a lack of willpower.',
-  'Medical support can provide the breakthrough many have been searching for.',
-  'Trendy diets fail to address the underlying causes of weight gain.',
+  'Lasting weight loss is about more than willpower—yoga helps balance the body and mind, addressing deep-rooted causes.',
+  'Expert yoga instructors offer compassionate, personalized support on your path to better health.',
+  'Yoga-based programs focus on sustainable lifestyle change, not fleeting trends, for meaningful results that last.',
 ];
 
 const styles = {
@@ -44,10 +44,15 @@ const styles = {
 const TextContainer = () => {
   return (
     <div style={styles}>
-      <p style={styles.caption}>Why Traditional Diets Miss the Mark</p>
+      <p style={styles.caption}>
+        Why Diets Alone Aren’t Enough for Lasting Change
+      </p>
       <div style={styles.title}>
-        <p>When diets fall short, expert care makes the difference.</p>
-        <p>Experience real, lasting results..</p>
+        <p>
+          When quick-fix diets fail, holistic yoga guidance transforms your
+          journey
+        </p>
+        <p>Rediscover real, lasting well-being.</p>
       </div>
       {ResultTexts.map((item) => (
         <p className="result-entries" style={styles.resultItem}>

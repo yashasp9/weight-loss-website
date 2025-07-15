@@ -51,7 +51,7 @@ const beforeAfterTextStyles = {
 
 const BeforeAfterSection = () => {
   return (
-    <div style={styles.beforeAfterSectionStyles}>
+    <div id="reviews" style={styles.beforeAfterSectionStyles}>
       <BeforeAfterCardOne />
       <BeforeAfterCardTwo />
     </div>
@@ -74,9 +74,8 @@ const BeforeAfterCardOne = () => {
       </div>
       <div style={beforeAfterTextStyles} className="before-after-text">
         <p>
-          "I completed the consultation entirely online from the comfort of my
-          home. No intense workouts involved—just practical habits and ongoing
-          support that made all the difference!"
+          "Gentle yoga, mindful habits, and great support—no stress, no intense
+          workouts. I feel stronger and more balanced every day. "
         </p>
         <p>— Mark Hansen, age–35 | Lost 9kg in 3 months</p>
       </div>
@@ -88,7 +87,7 @@ const BeforeAfterCardTwo = () => {
   return (
     <div style={styles.beforeAfterCard} className="before-after-container">
       <div style={styles.beforeAfterCard.cardTop} className="card-top">
-        <p>Mickel Robert, 45</p>
+        <p>Jessica Lane, 45</p>
         <p style={cardTextStyles.results}>3.5 month Program Results</p>
       </div>
       <div
@@ -100,9 +99,8 @@ const BeforeAfterCardTwo = () => {
       </div>
       <div style={beforeAfterTextStyles} className="before-after-text">
         <p>
-          "I did my consultation completely online, right from home. With no
-          intense workouts—just simple, healthy habits and steady support—my
-          results were real!"
+          "No strict diets, just simple movement and steady support. Yoga helped
+          me build healthy habits that actually stuck"
         </p>
         <p>— Jessica Lane, age–39 | Lost 10kg in 3.5 months</p>
       </div>

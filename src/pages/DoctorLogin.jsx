@@ -82,7 +82,7 @@ const LoginCardContent = () => {
 
   return (
     <div className="cardContentContainer" style={loginCardContentStyle}>
-      <h1 style={loginCardContentStyle.title}>Doctor Login</h1>
+      <h1 style={loginCardContentStyle.title}>Instructor Login</h1>
       <form onSubmit={handleSubmit}>
         <div
           className="loginFormContainer"

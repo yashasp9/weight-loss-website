@@ -69,7 +69,7 @@ const ProductComparisonText = ({ subheading, heading, features }) => {
 
 const ProductComparisonCard = ({ heading, subheading, features, imageSrc }) => {
   return (
-    <div style={styles}>
+    <div id="comparison" style={styles}>
       <div className="product-comparison-text">
         <ProductComparisonText
           heading={heading}

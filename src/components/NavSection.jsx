@@ -47,40 +47,31 @@ const mainNavContainerStyles = {
 };
 
 const menuOptionStyles = {
-  display: 'flex',
-  gap: '8px',
-  border: '1px solid black',
-  'border-radius': '50px',
-  padding: '10px',
-  'align-items': 'center',
+  cursor: 'pointer',
+};
+
+const scrollToElement = (id) => {
+  const element = document.getElementById(id);
+  element?.scrollIntoView({ behavior: 'smooth' });
 };
 
 const MainNavSection = () => {
   return (
     <div style={mainNavContainerStyles}>
-      <div style={menuOptionStyles}>
-        <p>Menu</p>
-
-        <Menu size={20} />
+      <div onClick={() => scrollToElement('home')} style={menuOptionStyles}>
+        Home
       </div>
-      <div>Home</div>
-      <div>Product</div>
-      <div>Reviews</div>
+      <div
+        onClick={() => scrollToElement('comparison')}
+        style={menuOptionStyles}
+      >
+        Comparison
+      </div>
+      <div onClick={() => scrollToElement('reviews')} style={menuOptionStyles}>
+        Reviews
+      </div>
     </div>
   );
-};
-
-const searchIconContainerStyles = {
-  border: '1px solid black',
-  'border-radius': '100%',
-  height: '50px',
-  width: '50px',
-  display: 'flex',
-  'justify-content': 'center',
-};
-
-const searchIconStyles = {
-  width: '26px',
 };
 
 const loginContainerStyles = {
@@ -113,9 +104,6 @@ const getStartedImageStyles = {
 const GetStartedSection = () => {
   return (
     <div style={getStartedContainerStyles}>
-      <div style={searchIconContainerStyles} className="search-icon-container">
-        <img style={searchIconStyles} src="/search-icon.svg"></img>
-      </div>
       <div style={loginContainerStyles} className="login-container">
         <div>
           <Link to="/login">Login</Link>

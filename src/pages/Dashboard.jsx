@@ -1,83 +1,83 @@
 const patientAppointmentData = [
-  { title: "Total Patients", data: 25 },
+  { title: 'Total Clients', data: 25 },
   { title: "Today's Appointments", data: 10 },
-  { title: "Upcoming Appointments", data: 5 }
+  { title: 'Upcoming Appointments', data: 5 },
 ];
 const patientData = [
   {
     patientId: 1,
-    patientName: "ABCD",
+    patientName: 'Client1',
     bmi: 12,
-    engagementScore: 1.5
+    engagementScore: 1.5,
   },
   {
     patientId: 2,
-    patientName: "Patient2",
+    patientName: 'Client2',
     bmi: 30.4,
-    engagementScore: 0.3
+    engagementScore: 0.3,
   },
   {
     patientId: 3,
-    patientName: "Patient3",
+    patientName: 'Client3',
     bmi: 26.6,
-    engagementScore: 1.39
+    engagementScore: 1.39,
   },
   {
     patientId: 4,
-    patientName: "Patient4",
+    patientName: 'Client4',
     bmi: 16.6,
-    engagementScore: 0.6
+    engagementScore: 0.6,
   },
   {
     patientId: 5,
-    patientName: "Patient5",
+    patientName: 'Client5',
     bmi: 35.9,
-    engagementScore: 1.77
+    engagementScore: 1.77,
   },
   {
     patientId: 6,
-    patientName: "Patient6",
+    patientName: 'Client6',
     bmi: 17.4,
-    engagementScore: 1.31
+    engagementScore: 1.31,
   },
   {
     patientId: 7,
-    patientName: "Patient7",
+    patientName: 'Client7',
     bmi: 28.6,
-    engagementScore: 1.92
+    engagementScore: 1.92,
   },
   {
     patientId: 8,
-    patientName: "Patient8",
+    patientName: 'Client8',
     bmi: 16.6,
-    engagementScore: 0.67
+    engagementScore: 0.67,
   },
   {
     patientId: 9,
-    patientName: "Patient9",
+    patientName: 'Client9',
     bmi: 16.4,
-    engagementScore: 0.79
+    engagementScore: 0.79,
   },
   {
     patientId: 10,
-    patientName: "Patient10",
+    patientName: 'Client10',
     bmi: 15.1,
-    engagementScore: 1.21
+    engagementScore: 1.21,
   },
   {
     patientId: 11,
-    patientName: "Patient11",
+    patientName: 'Client11',
     bmi: 33.8,
-    engagementScore: 0.86
-  }
+    engagementScore: 0.86,
+  },
 ];
 
 const dashboardContainerStyles = {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  margin: "20px",
-  gap: "20px"
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  margin: '20px',
+  gap: '20px',
 };
 const Dashboard = () => {
   return (
@@ -89,8 +89,8 @@ const Dashboard = () => {
 };
 
 const summarySectionStyles = {
-  display: "flex",
-  gap: "4px"
+  display: 'flex',
+  gap: '4px',
 };
 
 const SummarySection = () => {
@@ -104,13 +104,13 @@ const SummarySection = () => {
 };
 
 const summarisedDataStyles = {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  gap: "10px",
-  border: "1px solid grey",
-  padding: "14px",
-  borderRadius: "10px"
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  gap: '10px',
+  border: '1px solid grey',
+  padding: '14px',
+  borderRadius: '10px',
 };
 
 const SummarisedData = ({ title, data }) => {
@@ -123,24 +123,24 @@ const SummarisedData = ({ title, data }) => {
 };
 
 const patientDataStyles = {
-  padding: "10px",
-  display: "flex",
-  justifyContent: "center",
+  padding: '10px',
+  display: 'flex',
+  justifyContent: 'center',
   tableStyle: {
-    width: "550px",
-    border: "1px solid black",
-    borderRadius: "4px",
-    marginLeft: "auto",
-    marginRight: "auto"
-  }
+    width: '550px',
+    border: '1px solid black',
+    borderRadius: '4px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+  },
 };
 const PatientData = () => {
   return (
     <div style={patientDataStyles}>
       <table style={patientDataStyles.tableStyle}>
         <tr>
-          <th>Patient ID</th>
-          <th>Patient Name</th>
+          <th>Client ID</th>
+          <th>Client Name</th>
           <th>BMI</th>
           <th>Engagement Score</th>
         </tr>
