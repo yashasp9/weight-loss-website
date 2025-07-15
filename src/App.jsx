@@ -20,7 +20,7 @@ const CaptionNote = () => (
     This is a Portfolio/Demo web page developed by{' '}
     <a
       target="_blank"
-      href="https://dribbble.com/shots/26147082-Weight-Loss-Website-Design"
+      href="https://www.linkedin.com/in/yashaspdev/"
       style={{ paddingInline: '6px' }}
     >
       Yashas.
