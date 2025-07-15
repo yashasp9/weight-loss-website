@@ -42,7 +42,7 @@ function App() {
         features={[
           'Can lead to unhealthy fixation on food and rules',
           'Obsession with food and restriction',
-          'One size fits all approach',
+          'Use one-size-fits-all solutions that ignore your unique needs',
           'Loss of Muscle Mass',
         ]}
         imageSrc={'./natural-diet.jpg'}
