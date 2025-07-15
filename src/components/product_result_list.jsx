@@ -84,7 +84,7 @@ const ProductResultList = () => {
     <div style={ListStyle}>
       <TextContainer />
 
-      <img src="/art_worried_weight.png" style={ListStyle.image} />
+      <img src="/meditation.png" style={ListStyle.image} />
       <p
         style={{
           ...styles.caption,
