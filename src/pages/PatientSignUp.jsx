@@ -23,13 +23,13 @@ const SignUpSuccesfulCardStyles = {
     fontSize: '',
   },
 };
-const SignUpSuccesfulCard = () => {
+const AppointmentBookingSuccessfulCard = () => {
   return (
     <div
       style={SignUpSuccesfulCardStyles.container}
-      className="Sign Up Succesful Container"
+      className="Appointment Booking Succesful Container"
     >
-      <h1>Sign Up Successful</h1>
+      <h1>Appointment Booking Successful</h1>
       <div>
         Please check your email, for further details regarding your appointment
       </div>
@@ -42,7 +42,7 @@ const PatientSignUp = () => {
 
   return (
     <div className="cardContainer" style={cardContainerStyle}>
-      {signUpSubmitted ? <SignUpSuccesfulCard /> : <LoginCard />}
+      {signUpSubmitted ? <AppointmentBookingSuccessfulCard /> : <LoginCard />}
     </div>
   );
 };
@@ -117,9 +117,8 @@ const LoginCardContent = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Sign Up Clicked');
 
-    if (name || phone || email || password || appointmentDateTime) {
+    if (name || phone || email || appointmentDateTime) {
       setErrorText('');
       setSignUpSubmitted(true);
     } else {
@@ -129,7 +128,7 @@ const LoginCardContent = () => {
 
   return (
     <div className="cardContentContainer" style={loginCardContentStyle}>
-      <h1 style={loginCardContentStyle.title}>Sign Up</h1>
+      <h1 style={loginCardContentStyle.title}>Book an Appointment</h1>
       <form onSubmit={handleSubmit}>
         <div
           className="loginFormContainer"
@@ -155,14 +154,6 @@ const LoginCardContent = () => {
             style={loginCardContentStyle.loginFormStyle.inputStyles}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-          />
-
-          <input
-            placeholder="Password"
-            type="password"
-            style={loginCardContentStyle.loginFormStyle.inputStyles}
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
           />
 
           <label

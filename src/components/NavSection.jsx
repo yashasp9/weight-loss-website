@@ -1,12 +1,12 @@
-import { Snowflake } from "lucide-react";
-import { Menu } from "lucide-react";
-import { Link } from "react-router";
+import { Snowflake } from 'lucide-react';
+import { Menu } from 'lucide-react';
+import { Link } from 'react-router';
 
 const navContainerStyles = {
-  display: "flex",
-  "justify-content": "space-between",
+  display: 'flex',
+  'justify-content': 'space-between',
 
-  margin: "20px 30px"
+  margin: '20px 30px',
 };
 
 const NavSection = () => {
@@ -21,14 +21,14 @@ const NavSection = () => {
 };
 
 const logoSectionStyles = {
-  display: "flex",
-  gap: "10px",
-  "align-items": "center",
+  display: 'flex',
+  gap: '10px',
+  'align-items': 'center',
 
   title: {
-    "font-weight": "500",
-    "font-size": "30px"
-  }
+    'font-weight': '500',
+    'font-size': '30px',
+  },
 };
 
 const LogoSection = () => {
@@ -41,18 +41,18 @@ const LogoSection = () => {
 };
 
 const mainNavContainerStyles = {
-  display: "flex",
-  gap: "20px",
-  "align-items": "center"
+  display: 'flex',
+  gap: '20px',
+  'align-items': 'center',
 };
 
 const menuOptionStyles = {
-  display: "flex",
-  gap: "8px",
-  border: "1px solid black",
-  "border-radius": "50px",
-  padding: "10px",
-  "align-items": "center"
+  display: 'flex',
+  gap: '8px',
+  border: '1px solid black',
+  'border-radius': '50px',
+  padding: '10px',
+  'align-items': 'center',
 };
 
 const MainNavSection = () => {
@@ -65,52 +65,50 @@ const MainNavSection = () => {
       </div>
       <div>Home</div>
       <div>Product</div>
-      <div>Benefits</div>
-      <div>Consultations</div>
       <div>Reviews</div>
     </div>
   );
 };
 
 const searchIconContainerStyles = {
-  border: "1px solid black",
-  "border-radius": "100%",
-  height: "50px",
-  width: "50px",
-  display: "flex",
-  "justify-content": "center"
+  border: '1px solid black',
+  'border-radius': '100%',
+  height: '50px',
+  width: '50px',
+  display: 'flex',
+  'justify-content': 'center',
 };
 
 const searchIconStyles = {
-  width: "26px"
+  width: '26px',
 };
 
 const loginContainerStyles = {
-  display: "flex",
-  "background-color": "#DD6096",
-  padding: "10px",
-  "border-radius": "30px",
-  "align-items": "center",
-  gap: "10px",
-  color: "#fff"
+  display: 'flex',
+  'background-color': '#DD6096',
+  padding: '10px',
+  'border-radius': '30px',
+  'align-items': 'center',
+  gap: '10px',
+  color: '#fff',
 };
 
 const getStartedContainerStyles = {
-  display: "flex",
-  "align-items": "center",
-  gap: "8px"
+  display: 'flex',
+  'align-items': 'center',
+  gap: '8px',
 };
 
 const getStartedIconStyles = {
-  "background-color": "#fff",
-  padding: "5px",
-  "border-radius": "100%",
-  display: "flex",
-  "align-items": "center"
+  'background-color': '#fff',
+  padding: '5px',
+  'border-radius': '100%',
+  display: 'flex',
+  'align-items': 'center',
 };
 
 const getStartedImageStyles = {
-  height: "20px"
+  height: '20px',
 };
 const GetStartedSection = () => {
   return (

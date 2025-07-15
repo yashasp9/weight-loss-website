@@ -1,45 +1,45 @@
-import { Link } from "react-router";
+import { Link } from 'react-router';
 
 const mainSectionContainerStyles = {
-  display: "flex",
-  "flex-direction": "column",
-  "align-items": "center",
-  padding: "20px 50px"
+  display: 'flex',
+  'flex-direction': 'column',
+  'align-items': 'center',
+  padding: '20px 50px',
 };
 
 const mainSectionTextStyles = {
-  display: "flex",
-  "flex-direction": "column",
-  "align-items": "center",
+  display: 'flex',
+  'flex-direction': 'column',
+  'align-items': 'center',
 
-  gap: "15px",
-  width: "40vw",
+  gap: '15px',
+  width: '40vw',
   mainHeading: {
-    "font-size": "48px",
-    "text-align": "center"
+    'font-size': '48px',
+    'text-align': 'center',
   },
   bookingStyle: {
-    display: "flex"
-  }
+    display: 'flex',
+  },
 };
 
 const weightLossStyle = {
-  color: "#D4779F",
-  "font-family": "Playfair Display, serif"
+  color: '#D4779F',
+  'font-family': 'Playfair Display, serif',
 };
 
 const bookMedicalConsultationStyle = {
-  color: "white",
-  background: "black",
-  padding: "15px 15px",
-  "border-radius": "30px",
-  cursor: "pointer"
+  color: 'white',
+  background: 'black',
+  padding: '15px 15px',
+  'border-radius': '30px',
+  cursor: 'pointer',
 };
 
 const subHeadingStyle = {
-  "text-align": "center",
-  width: "80%",
-  "margin-bottom": "20px"
+  'text-align': 'center',
+  width: '80%',
+  'margin-bottom': '20px',
 };
 
 const MainSection = () => {
@@ -47,21 +47,19 @@ const MainSection = () => {
     <div style={mainSectionContainerStyles} className="main-section-container">
       <div style={mainSectionTextStyles} className="main-section-text">
         <p style={mainSectionTextStyles.mainHeading}>
-          Medically Supervised <span style={weightLossStyle}>Weight Loss,</span>{" "}
-          Tailored to You.
+          Expert-Led <span style={weightLossStyle}>Weight Loss,</span>{' '}
+          Customized for Your Needs
         </p>
         <p style={subHeadingStyle}>
-          Lose weight safely and sustainably with the support of board-certified
-          clinicians,{" "}
+          Reach your weight loss goals safely and sustainably, supported by
+          expert clinicians,{' '}
           <strong>
-            <u>personalized treatment plans</u>
+            <u>individualized treatment</u>
           </strong>
-          , and proven medical protocols.
+          , and trusted medical protocols.
         </p>
         <p style={bookMedicalConsultationStyle}>
-          <Link to="/patient-sign-up">
-            Book Your Free Medical Consultation →
-          </Link>
+          <Link to="/patient-sign-up">Book A Free Medical Consultation →</Link>
         </p>
       </div>
     </div>

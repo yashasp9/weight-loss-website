@@ -63,7 +63,7 @@ const LoginCardContent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (email === 'test@test.com' && password === 'pass123') {
+    if (email && password) {
       setErrorText('');
       navigate('/dashboard');
     } else {

@@ -1,51 +1,52 @@
 const styles = {
   beforeAfterSectionStyles: {
-    display: "flex",
-    gap: "40px",
-    "justify-content": "center",
-    margin: "25px 30px 30px"
+    display: 'flex',
+    gap: '40px',
+    'justify-content': 'center',
+    margin: '25px 30px 30px',
   },
   beforeAfterCard: {
-    display: "flex",
-    "flex-direction": "column",
-    background: "#F9F9F9",
-    width: "50vw",
-    "border-radius": "30px",
-    padding: "20px",
-    gap: "20px",
+    display: 'flex',
+    'flex-direction': 'column',
+    background: '#F9F9F9',
+    width: '50vw',
+    'border-radius': '30px',
+    padding: '20px',
+    gap: '20px',
 
     cardTop: {
-      display: "flex",
-      "justify-content": "space-between",
-      "align-items": "center"
+      display: 'flex',
+      'justify-content': 'space-between',
+      'align-items': 'center',
     },
     imagesContainer: {
-      display: "flex",
-      "align-items": "center",
-      "justify-content": "center",
-      gap: "20px"
-    }
-  }
+      display: 'flex',
+      'align-items': 'center',
+      'justify-content': 'center',
+      gap: '20px',
+    },
+  },
 };
 
 const cardTextStyles = {
   results: {
-    padding: "5px 10px",
-    border: "1px solid black",
-    "border-radius": "15px"
-  }
+    padding: '5px 10px',
+    border: '1px solid black',
+    'border-radius': '15px',
+  },
 };
 
 const imageStyles = {
-  "border-radius": "10px"
+  'border-radius': '10px',
+  height: '300px',
 };
 
 const beforeAfterTextStyles = {
-  display: "flex",
-  "flex-direction": "column",
-  "justify-content": "center",
-  gap: "10px",
-  "margin-bottom": "30px"
+  display: 'flex',
+  'flex-direction': 'column',
+  'justify-content': 'center',
+  gap: '10px',
+  'margin-bottom': '30px',
 };
 
 const BeforeAfterSection = () => {
@@ -61,8 +62,8 @@ const BeforeAfterCardOne = () => {
   return (
     <div style={styles.beforeAfterCard} className="before-after-container">
       <div style={styles.beforeAfterCard.cardTop} className="card-top">
-        <p>Jason Bell, 35</p>
-        <p style={cardTextStyles.results}>2.5 month Program Results</p>
+        <p>Mark Hansen, 32</p>
+        <p style={cardTextStyles.results}>3.5 month Program Results</p>
       </div>
       <div
         style={styles.beforeAfterCard.imagesContainer}
@@ -73,10 +74,11 @@ const BeforeAfterCardOne = () => {
       </div>
       <div style={beforeAfterTextStyles} className="before-after-text">
         <p>
-          "I took the consultation fully online from home. No extreme workouts,
-          just smart habits and regular guidance — and it worked!"
+          "I completed the consultation entirely online from the comfort of my
+          home. No intense workouts involved—just practical habits and ongoing
+          support that made all the difference!"
         </p>
-        <p>— Jerome Bell, age–35 | Lost 10kg in 2.5 months</p>
+        <p>— Mark Hansen, age–35 | Lost 9kg in 3 months</p>
       </div>
     </div>
   );
@@ -98,10 +100,11 @@ const BeforeAfterCardTwo = () => {
       </div>
       <div style={beforeAfterTextStyles} className="before-after-text">
         <p>
-          "I took the consultation fully online from home. No extreme workouts,
-          just smart habits and regular guidance — and it worked!"
+          "I did my consultation completely online, right from home. With no
+          intense workouts—just simple, healthy habits and steady support—my
+          results were real!"
         </p>
-        <p>— Mickel Robert, age–45 | Lost 10kg in 3.5 months</p>
+        <p>— Jessica Lane, age–39 | Lost 10kg in 3.5 months</p>
       </div>
     </div>
   );
