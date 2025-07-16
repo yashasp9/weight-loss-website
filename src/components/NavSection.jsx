@@ -1,5 +1,5 @@
-import { Snowflake } from 'lucide-react';
-import { Menu } from 'lucide-react';
+import { Flower } from 'lucide-react';
+
 import { Link } from 'react-router';
 
 const navContainerStyles = {
@@ -34,7 +34,7 @@ const logoSectionStyles = {
 const LogoSection = () => {
   return (
     <div style={logoSectionStyles}>
-      <Snowflake size={24} color="#D64584" />
+      <Flower size={24} color="#D64584" />
       <div style={logoSectionStyles.title}>React Portfolio</div>
     </div>
   );
